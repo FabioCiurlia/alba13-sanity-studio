@@ -1,0 +1,4 @@
+[build]
+  base = "studio/"
+  command = "sanity build"
+  publish = "dist"
