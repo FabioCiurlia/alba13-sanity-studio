@@ -87,7 +87,6 @@ const club = {
   fields: [
     { name: 'name', type: 'string', title: 'Nome Squadra' },
     { name: 'slug', type: 'slug', title: 'Slug (ID)', options: { source: 'name' } },
-    { name: 'themeColor', type: 'string', title: 'Colore Principale' },
 
     // Hero Section
     {
@@ -111,46 +110,6 @@ const club = {
         { name: 'title', type: 'string', title: 'Titolo' },
         { name: 'description', type: 'text', title: 'Descrizione' },
         { name: 'image', type: 'image', title: 'Immagine' },
-      ]
-    },
-
-    // Configuration
-    {
-      name: 'config',
-      type: 'object',
-      title: 'Configurazione Club',
-      fields: [
-        {
-          name: 'colors',
-          type: 'object',
-          title: 'Colori',
-          fields: [
-            { name: 'primary', type: 'string', title: 'Primary (es. cyan-600)' },
-            { name: 'secondary', type: 'string', title: 'Secondary (es. cyan-400)' },
-            { name: 'light', type: 'string', title: 'Light (es. cyan-100)' },
-            { name: 'lighter', type: 'string', title: 'Lighter (es. cyan-50)' },
-          ]
-        },
-        {
-          name: 'theme',
-          type: 'object',
-          title: 'Tema',
-          fields: [
-            { name: 'bg', type: 'string', title: 'Background Class (es. bg-slate-50)' },
-            { name: 'text', type: 'string', title: 'Text Class (es. text-slate-900)' },
-            { name: 'selection', type: 'string', title: 'Selection Class (es. selection:bg-cyan-200)' },
-            {
-              name: 'gradient',
-              type: 'object',
-              title: 'Gradient Classes',
-              fields: [
-                { name: 'from', type: 'string', title: 'From (es. from-cyan-100/50)' },
-                { name: 'via', type: 'string', title: 'Via (es. via-cyan-50/30)' },
-                { name: 'to', type: 'string', title: 'To (es. to-transparent)' },
-              ]
-            }
-          ]
-        }
       ]
     }
   ]
